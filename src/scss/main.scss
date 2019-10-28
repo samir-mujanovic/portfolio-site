@@ -306,7 +306,7 @@ main {
           transition: all 0.2s ease-out;
 
           svg {
-            margin-right: 4px;
+            margin-right: 7px;
           }
         }
 
@@ -373,35 +373,19 @@ main {
 
 .home {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
   position: relative;
-  background-image: url("/img/bg-img-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #181818;
-    opacity: 0.7;
-    z-index: 0;
-  }
+  background: rgba(24, 24, 24, 0.7);
 
   .banner-text {
-    position: absolute;
-    top: 50%;
-    width: 100%;
     text-align: center;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 1;
-
     h4 {
       font-size: 24px;
       letter-spacing: 1px;
@@ -411,23 +395,15 @@ main {
       color: #fff;
       font-family: "Open-sans", sans-serif;
     }
-
-    .vue-typer {
-      .custom.char.typed {
-        font-family: "Source Serif Pro", serif;
-        line-height: 100%;
-        margin: auto;
-        color: #d94c48;
-        font-size: 36px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-
-      .custom.caret {
-        font-size: 25px;
-        background-color: transparent;
-      }
+    h2 {
+      font-family: "Source Serif Pro", serif;
+      line-height: 100%;
+      margin: auto;
+      color: #d94c48;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
   }
 }
@@ -542,15 +518,6 @@ main {
 }
 
 // Portfolio
-
-.v-lazy-image {
-  filter: blur(10px);
-  transition: filter 0.7s;
-}
-
-.v-lazy-image-loaded {
-  filter: blur(0);
-}
 
 .portfolio-item {
   position: relative;
@@ -727,14 +694,8 @@ main {
         font-size: 32px;
       }
 
-      .vue-typer {
-        .custom.char.typed {
-          font-size: 58px;
-        }
-
-        .custom.caret {
-          font-size: 47px;
-        }
+      h2 {
+        font-size: 58px;
       }
     }
   }
@@ -760,14 +721,8 @@ main {
 @media (min-width: 1024px) {
   .home {
     .banner-text {
-      .vue-typer {
-        .custom.char.typed {
-          font-size: 62px;
-        }
-
-        .custom.caret {
-          font-size: 51px;
-        }
+      h2 {
+        font-size: 62px;
       }
     }
   }
@@ -791,11 +746,10 @@ main {
       .primary-menu {
         li {
           a {
-            width: unset;
             font-weight: bold;
             color: #c3c3c3;
-            display: inline-block;
             text-transform: uppercase;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
 
             &:hover {
               color: #d94c48;

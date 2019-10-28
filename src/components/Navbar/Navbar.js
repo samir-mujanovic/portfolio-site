@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
 import { FaHome, FaUser, FaClipboardList, FaBriefcase, FaLinkedinIn, FaSkype, FaGithub } from 'react-icons/fa'
+import logo from '../../images/logo.png'
 
 class Navbar extends Component {
     state = {
@@ -26,7 +26,7 @@ class Navbar extends Component {
                 <div className={`nav-menu ${this.state.isActive ? 'is-active-menu' : null}`}>
                     <div className="navbar-logo">
                         <Link to="/">
-                            <img src="/img/logo.png" className="img-fluid" alt="" />
+                            <img src={logo} alt="logo" className="img-fluid" />
                         </Link>
                         <h2>Samir Mujanovic</h2>
                         <p>Front-end Developer</p>
@@ -59,7 +59,7 @@ class Navbar extends Component {
                     <div className="social-links">
                         <a
                             className="social-link"
-                            to="https://www.linkedin.com/in/samir-mujanovic"
+                            href="https://www.linkedin.com/in/samir-mujanovic"
                             rel="noopener noreferrer"
                             aria-label="Linkedin"
                             target="_blank"
@@ -71,6 +71,7 @@ class Navbar extends Component {
                             href="skype:sameer.xxxxx?userinfo"
                             aria-label="Skype"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <FaSkype />
                         </a>
