@@ -552,6 +552,10 @@ main {
         content: "";
         top: 5px;
       }
+      ul {
+        padding-left: 15px;
+        list-style-type: disc;
+      }
     }
 
     .certificate {
@@ -734,6 +738,9 @@ main {
 }
 
 // Contact form style
+.hidden {
+  display: none;
+}
 
 form {
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);

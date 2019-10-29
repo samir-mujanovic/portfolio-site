@@ -36,7 +36,7 @@ const Contact = () => {
                                     required
                                 />
                             </div>
-                            <div class="input">
+                            <div className="input">
                                 <textarea
                                     className="input-field cf-validate"
                                     id="cf-message"
