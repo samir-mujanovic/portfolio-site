@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import Hero from '../components/Hero'
-import Banner from '../components/Banner'
+import Hero from '../components/Home/Hero'
+import Banner from '../components/Home/Banner'
 import { graphql } from 'gatsby'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,7 +20,7 @@ export const query = graphql`
   heroImg: file(relativePath: {eq: "bg-img-2.jpeg"}) {
     childImageSharp {
       fluid(quality:90, maxWidth: 4160) {
-        ...GatsbyImageSharpFluid_withWebp
+        ...GatsbyImageSharpFluid
       }
     }
   }

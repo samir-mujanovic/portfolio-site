@@ -29,7 +29,7 @@ class Navbar extends Component {
                             <img src={logo} alt="logo" className="img-fluid" />
                         </Link>
                         <h2>Samir Mujanovic</h2>
-                        <p>Front-end Developer</p>
+                        <p>Web Developer</p>
                     </div>
                     <div className="menu-holder">
                         <ul className="primary-menu">
