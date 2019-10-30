@@ -55,6 +55,10 @@ main {
 
 // Reusable style
 
+.no-padding {
+  padding: 0;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -122,6 +126,16 @@ main {
   .aboutHeading {
     &::before {
       content: "About";
+    }
+  }
+  .resumeHeading {
+    &::before {
+      content: "Resume";
+    }
+  }
+  .portfolioHeading {
+    &::before {
+      content: "Portfolio";
     }
   }
 }
@@ -261,7 +275,7 @@ main {
       text-align: center;
 
       h2 {
-        font-size: 22px;
+        font-size: 20px;
         font-family: "Open sans", sans-serif;
         margin: 3px 0;
       }
@@ -272,7 +286,7 @@ main {
       }
 
       img {
-        width: 100px;
+        width: 80px;
       }
     }
 
@@ -609,7 +623,7 @@ main {
       overflow: hidden;
       margin: 0;
 
-      img {
+      .gatsby-image-wrapper {
         opacity: 1;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -683,7 +697,7 @@ main {
           transition: all 0.35s;
         }
 
-        i {
+        svg {
           position: absolute;
           left: 0px;
           -webkit-transform: translateX(-200%);
@@ -700,10 +714,12 @@ main {
         }
       }
 
-      &:hover img {
-        opacity: 0.1;
-        -webkit-transform: scale3d(1.05, 1.05, 1);
-        transform: scale3d(1.05, 1.05, 1);
+      &:hover {
+        .gatsby-image-wrapper {
+          opacity: 0.1;
+          -webkit-transform: scale3d(1.05, 1.05, 1);
+          transform: scale3d(1.05, 1.05, 1);
+        }
       }
 
       &:hover figcaption:before {
@@ -727,7 +743,7 @@ main {
         opacity: 1;
       }
 
-      &:hover i {
+      &:hover svg {
         opacity: 1;
         -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);

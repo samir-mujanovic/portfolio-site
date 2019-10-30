@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { FaHome, FaUser, FaClipboardList, FaBriefcase, FaLinkedinIn, FaSkype, FaGithub } from 'react-icons/fa'
 import logo from '../../images/logo.png'
 
@@ -25,33 +25,33 @@ class Navbar extends Component {
                 </div>
                 <div className={`nav-menu ${this.state.isActive ? 'is-active-menu' : null}`}>
                     <div className="navbar-logo">
-                        <Link to="/">
+                        <AniLink fade to="/">
                             <img src={logo} alt="logo" className="img-fluid" />
-                        </Link>
+                        </AniLink>
                         <h2>Samir Mujanovic</h2>
                         <p>Web Developer</p>
                     </div>
                     <div className="menu-holder">
                         <ul className="primary-menu">
                             <li className="nav-menu-item">
-                                <Link to="/" className="navbar-item" activeClassName="link-active">
+                                <AniLink fade to="/" className="navbar-item" activeClassName="link-active">
                                     <FaHome /> <span>Home</span>
-                                </Link>
+                                </AniLink>
                             </li>
                             <li className="nav-menu-item">
-                                <Link to="/about" className="navbar-item" activeClassName="link-active">
+                                <AniLink fade to="/about" className="navbar-item" activeClassName="link-active">
                                     <FaUser /> <span>About</span>
-                                </Link>
+                                </AniLink>
                             </li>
                             <li className="nav-menu-item">
-                                <Link to="/resume" className="navbar-item" activeClassName="link-active">
+                                <AniLink fade to="/resume" className="navbar-item" activeClassName="link-active">
                                     <FaClipboardList /> <span>Resume</span>
-                                </Link>
+                                </AniLink>
                             </li>
                             <li className="nav-menu-item">
-                                <Link to="/portfolio" className="navbar-item" activeClassName="link-active">
+                                <AniLink fade to="/portfolio" className="navbar-item" activeClassName="link-active">
                                     <FaBriefcase /> <span>Portfolio</span>
-                                </Link>
+                                </AniLink>
                             </li>
                         </ul>
                     </div>

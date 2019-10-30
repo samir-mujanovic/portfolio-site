@@ -1,9 +1,11 @@
 import React from 'react'
+import Subtitle from '../Globals/Subtitle'
 
 const Contact = () => {
     return (
         <div className="section-contact">
             <div className="container">
+                <Subtitle title="Contact Form" className="my-5" />
                 <div className="row mt-4">
                     <div className="col-lg-12">
                         <form

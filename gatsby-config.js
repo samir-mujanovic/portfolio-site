@@ -7,6 +7,7 @@ module.exports = {
     title: `Samir Mujanovic | Infromation and Portfolio`,
     description: `I am web developer from Sarajevo, Bosnia and Herzegovina. I create beautiful professional web app/sites using best practices accessible.`,
     author: `@samir`,
+    siterUrl: `https://www.samirmujanovic.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,16 +29,26 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.samirmujanovic.com',
+        sitemap: 'https://www.samirmujanovic.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Portfolio`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/static/favicon-large.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
