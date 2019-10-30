@@ -7,7 +7,7 @@ module.exports = {
     title: `Samir Mujanovic | Infromation and Portfolio`,
     description: `I am web developer from Sarajevo, Bosnia and Herzegovina. I create beautiful professional web app/sites using best practices accessible.`,
     author: `@samir`,
-    siterUrl: `https://www.samirmujanovic.com`,
+    siteUrl: `https://samirmujanovic.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
