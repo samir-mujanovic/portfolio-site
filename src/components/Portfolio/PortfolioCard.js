@@ -3,12 +3,12 @@ import Img from 'gatsby-image'
 import { FaGithub } from 'react-icons/fa'
 
 const PortfolioCard = ({ portfolio }) => {
-    const { name, description, img, link, github } = portfolio;
+    const { name, description, images, link, github } = portfolio;
     return (
         <div className="col-12 col-lg-4 item">
             <div className="img-wrap">
                 <figure>
-                    <Img fluid={img.fluid} className="img-fluid" alt="portfolio-img" />
+                    <Img fluid={images.fluid} className="img-fluid" alt="portfolio-img" />
                     <figcaption>
                         <h3>{name}</h3>
                         <p>{description}</p>

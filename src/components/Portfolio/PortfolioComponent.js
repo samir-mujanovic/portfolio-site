@@ -13,7 +13,7 @@ const getPortfolio = graphql`
         description
         link
         github
-        img {
+        images {
           fluid {
             ...GatsbyContentfulFluid
           }
