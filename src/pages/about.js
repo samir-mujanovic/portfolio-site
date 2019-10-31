@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Title from '../components/Globals/Title'
-import About from '../components/About/About.component'
-import Contact from '../components/Contact/Contact'
+import About from '../components/About/AboutComponent'
+import Contact from '../components/Contact/ContactComponent'
 import SEO from "../components/seo"
 
 const about = () => {
