@@ -51,7 +51,7 @@ const Contact = () => {
                             </div>
                             <div className="response"></div>
                             <div className="submit-button mt-2">
-                                <button className="main-btn">Send Message</button>
+                                <button type="submit" className="main-btn">Send Message</button>
                             </div>
                         </form>
                     </div>
