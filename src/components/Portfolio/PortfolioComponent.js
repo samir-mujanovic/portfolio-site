@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const getPortfolio = graphql`
 {
-  portfolio: allContentfulPortfolio(sort:{fields:id}) {
+  portfolio: allContentfulPortfolio(sort:{fields:createdAt, order: DESC}) {
     edges {
       node {
         contentful_id

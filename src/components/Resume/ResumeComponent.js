@@ -7,7 +7,7 @@ import Subtitle from '../Globals/Subtitle'
 
 const getResume = graphql`
 {
-  experience: allContentfulResume(sort:{fields:id}) {
+  experience: allContentfulResume(sort:{fields:createdAt, order: DESC}) {
     edges {
       node {
         contentful_id
@@ -20,7 +20,7 @@ const getResume = graphql`
       }
     }
   }
-  education: allContentfulEducation(sort: {fields: id}) {
+  education: allContentfulEducation(sort: {fields:createdAt, order: ASC}) {
     edges {
       node {
         contentful_id
