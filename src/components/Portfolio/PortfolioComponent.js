@@ -26,25 +26,25 @@ const getPortfolio = graphql`
 
 const Portfolio = () => {
 
-    const response = useStaticQuery(getPortfolio);
-    const portfolios = response.portfolio.edges
+  const response = useStaticQuery(getPortfolio);
+  const portfolios = response.portfolio.edges
 
-    return (
-        <div className="portfolio">
-            <div className="container-fluid no-padding">
-                <Title className="portfolioHeading" title="Portfolio"></Title>
-                <div className="row portfolio-items no-gutters pt-2 pt-md-5 pb-5">
-                    {
-                        portfolios.map(({ node }) => {
-                            return (
-                                <PortfolioCard key={node.contentful_id} portfolio={node} />
-                            )
-                        })
-                    }
-                </div>
-            </div>
+  return (
+    <div className="portfolio">
+      <div className="container-fluid no-padding">
+        <Title className="portfolioHeading" title="Portfolio"></Title>
+        <div className="row portfolio-items no-gutters pt-2 pt-md-5 pb-5">
+          {
+            portfolios.map(({ node }) => {
+              return (
+                <PortfolioCard key={node.contentful_id} portfolio={node} />
+              )
+            })
+          }
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Portfolio
