@@ -342,15 +342,15 @@ main {
       width: 100%;
 
       a {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #c3c3c3;
         color: #343436;
         width: 31px;
         height: 31px;
         font-size: 16px;
-        line-height: 31px;
         border-radius: 50%;
-        text-align: center;
         transition: all 0.2s ease-out;
         cursor: pointer;
 
