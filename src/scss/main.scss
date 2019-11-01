@@ -325,7 +325,7 @@ main {
           transition: all 0.2s ease-out;
 
           svg {
-            margin-right: 7px;
+            margin-right: 10px;
           }
         }
 
@@ -874,7 +874,6 @@ form .input-field.input--filled {
           .link-active {
             width: unset;
             color: #d94c48;
-            background-color: transparent;
           }
         }
       }
