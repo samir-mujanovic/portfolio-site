@@ -890,3 +890,14 @@ form .input-field.input--filled {
     }
   }
 }
+
+@media (min-width: 1440px) {
+  main {
+    margin-left: 280px;
+  }
+  .navbar-main {
+    .nav-menu {
+      width: 280px;
+    }
+  }
+}
