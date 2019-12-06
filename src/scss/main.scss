@@ -285,6 +285,10 @@ main {
         margin-bottom: 0;
       }
 
+      img{
+        width: 180px;
+      }
+
     }
 
     .menu-holder {
@@ -797,6 +801,16 @@ form .input-field.input--filled {
       }
     }
   }
+
+  .navbar-main{
+    .nav-menu{
+      .navbar-logo{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  } 
 
   .about {
     .about-info {
