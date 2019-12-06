@@ -52,8 +52,8 @@ module.exports = {
         name: `Portfolio`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#2a2b30`,
+        theme_color: `#2a2b30`,
         display: `minimal-ui`,
         icon: `src/static/favicon-large.png`, // This path is relative to the root of the site.
       },
