@@ -64,7 +64,8 @@ main {
   height: auto;
 }
 
-.main-btn {
+.main-btn,
+.green-btn {
   color: #d94c48 !important;
   border-color: #d94c48 !important;
   text-transform: uppercase;
@@ -90,6 +91,15 @@ main {
     background-color: #d94c48;
     border-color: #d94c48;
     color: #fff !important;
+  }
+}
+
+.green-btn{
+  color: #388E3C !important;
+  border-color: #388E3C !important;
+  &:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
   }
 }
 
