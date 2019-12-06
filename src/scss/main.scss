@@ -361,7 +361,6 @@ main {
         width: 31px;
         height: 31px;
         font-size: 16px;
-        border-radius: 50%;
         transition: all 0.2s ease-out;
         cursor: pointer;
 
@@ -378,7 +377,7 @@ main {
       }
 
       a:not(:last-child) {
-        margin-right: 5px;
+        margin-right: 6px;
       }
     }
 
