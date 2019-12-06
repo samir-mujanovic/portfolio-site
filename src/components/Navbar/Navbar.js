@@ -88,7 +88,7 @@ class Navbar extends Component {
                         <p>All rights Reserved</p>
                     </div>
                     <div className="powered">
-                        Made with <span role="img" aria-label="emoji">❤️</span> using <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
+                        Made with <span role="img" aria-label="emoji">❤️</span> using <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a>
                     </div>
                 </div>
             </nav>
