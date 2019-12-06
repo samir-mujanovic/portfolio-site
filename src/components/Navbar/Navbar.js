@@ -87,6 +87,9 @@ class Navbar extends Component {
                         <p>Copyright &copy; {new Date().getFullYear()}</p>
                         <p>All rights Reserved</p>
                     </div>
+                    <div className="powered">
+                        Made with <span role="img" aria-label="emoji">❤️</span> using <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
+                    </div>
                 </div>
             </nav>
         )

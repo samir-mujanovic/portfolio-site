@@ -396,6 +396,15 @@ main {
         margin-bottom: 0;
       }
     }
+    .powered{
+      font-size: 14px;
+      a{
+        color: rgb(152, 128, 220);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .is-active-menu {
