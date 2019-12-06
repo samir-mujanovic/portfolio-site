@@ -28,8 +28,6 @@ class Navbar extends Component {
                         <AniLink fade to="/">
                             <img src={logo} alt="logo" className="img-fluid" />
                         </AniLink>
-                        <h2>Samir Mujanovic</h2>
-                        <p>Web Developer</p>
                     </div>
                     <div className="menu-holder">
                         <ul className="primary-menu">
