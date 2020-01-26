@@ -26,7 +26,8 @@ class Navbar extends Component {
                 <div className={`nav-menu ${this.state.isActive ? 'is-active-menu' : null}`}>
                     <div className="navbar-logo">
                         <AniLink fade to="/">
-                            <img src={logo} alt="logo" className="img-fluid" />
+                            <h2>S.</h2>
+                            <p>Web Developer</p>
                         </AniLink>
                     </div>
                     <div className="menu-holder">
