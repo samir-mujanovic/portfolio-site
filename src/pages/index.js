@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import Hero from '../components/Home/Hero'
-import Banner from '../components/Home/Banner'
-import { graphql } from 'gatsby'
+import Hero from "../components/Home/Hero"
+import Banner from "../components/Home/Banner"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../scss/main.scss'
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../scss/main.scss"
 
 export default ({ data }) => (
   <Layout>
@@ -18,13 +18,13 @@ export default ({ data }) => (
 )
 
 export const query = graphql`
-{
-  heroImg: file(relativePath: {eq: "bgImg.jpeg"}) {
-    childImageSharp {
-      fluid(quality:90, maxWidth: 4160) {
-        ...GatsbyImageSharpFluid
+  {
+    heroImg: file(relativePath: { eq: "bgImg.jpeg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
-}
 `
