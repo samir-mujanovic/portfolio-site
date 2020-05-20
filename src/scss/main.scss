@@ -993,12 +993,19 @@ form .input-field.input--filled {
 
   .home {
     .banner-text {
+      text-align: left;
       h4 {
         font-size: 25px;
       }
 
       h2 {
-        font-size: 50px;
+        font-size: 40px;
+      }
+      p {
+        margin: 5px 0 20px;
+      }
+      .redirect-buttons {
+        justify-content: start;
       }
     }
   }

@@ -10,7 +10,7 @@ const Banner = () => {
         <span>I'm </span> Samir Mujanovic
       </h2>
       <p>
-        I'm Frontend Developer & Graphics Designer focused on crafting clean &
+        I'm Frontend Developer & Graphics Designer focused on creating clean &
         user‑friendly experiences...
       </p>
       <div className="redirect-buttons">
