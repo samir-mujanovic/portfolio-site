@@ -73,10 +73,8 @@ main {
 
 .main-btn,
 .green-btn {
-  color: #d94c48 !important;
-  border-color: #d94c48 !important;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -84,20 +82,58 @@ main {
   color: #e1e1e1;
   border: 2px solid #e1e1e1;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: transparent;
   cursor: pointer;
   line-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-
+  &:hover {
+    color: #fff !important;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.main-btn {
+  border-color: #d94c48 !important;
+  background-color: #d94c48;
   &:hover {
     background-color: #d94c48;
     border-color: #d94c48;
-    color: #fff !important;
+  }
+}
+.redirect-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .link {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    position: relative;
+    span {
+      display: flex;
+      transition: all 0.3s ease-out;
+    }
+    .hover-icon {
+      opacity: 0;
+      transform: translateX(-10px);
+      position: absolute;
+      right: 15px;
+    }
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(217, 76, 72, 0.4);
+      .hover-icon {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      .text {
+        transform: translateX(-10px);
+      }
+    }
   }
 }
 
@@ -110,10 +146,6 @@ main {
     border-color: #388e3c;
     box-shadow: 0px 15px 20px rgba(56, 142, 60, 0.4);
     transform: translateY(-7px);
-  }
-
-  &:focus {
-    outline: none;
   }
 }
 
@@ -315,10 +347,10 @@ main {
       p {
         font-family: "Source Serif Pro", serif;
         color: #c3c3c3;
-        margin-bottom: 0;
+        margin: 5px 0 0;
         letter-spacing: 1px;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       img {
@@ -458,9 +490,10 @@ main {
 
   .banner-text {
     text-align: center;
+    padding: 0 15px;
 
     h4 {
-      font-size: 24px;
+      font-size: 22px;
       letter-spacing: 1px;
       font-weight: 700;
       text-transform: uppercase;
@@ -472,12 +505,15 @@ main {
     h2 {
       font-family: "Source Serif Pro", serif;
       line-height: 100%;
-      margin: auto;
       color: #d94c48;
-      font-size: 36px;
+      font-size: 39px;
+      margin-bottom: 5px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
+      span {
+        color: #fff;
+      }
     }
   }
 }
@@ -860,12 +896,39 @@ form .input-field.input--filled {
 @media (min-width: 768px) {
   .home {
     .banner-text {
+      text-align: center;
       h4 {
         font-size: 32px;
       }
 
       h2 {
         font-size: 58px;
+      }
+      p {
+        width: 60%;
+        margin: 0 auto 20px;
+      }
+      .redirect-buttons {
+        .link {
+          padding: 0 40px;
+          font-size: 14px;
+          .hover-icon {
+            transform: translateX(-10px);
+            right: 25px;
+            svg {
+              display: block;
+              width: 12px;
+            }
+          }
+          &:hover {
+            .hover-icon {
+              transform: translateX(0px);
+            }
+            .text {
+              transform: translateX(-10px);
+            }
+          }
+        }
       }
     }
   }
@@ -928,6 +991,18 @@ form .input-field.input--filled {
     margin-left: 250px;
   }
 
+  .home {
+    .banner-text {
+      h4 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+
   .navbar-main {
     .navbar-button {
       display: none;
@@ -961,6 +1036,19 @@ form .input-field.input--filled {
 }
 
 @media (min-width: 1440px) {
+  .home {
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 55px;
+      }
+    }
+  }
   main {
     margin-left: 280px;
   }

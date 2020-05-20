@@ -43,7 +43,7 @@ class Navbar extends Component {
           <div className="navbar-logo">
             <AniLink fade to="/">
               <h2>S.</h2>
-              <p>Web Developer</p>
+              <p>Frontend Developer</p>
             </AniLink>
           </div>
           <div className="menu-holder">
