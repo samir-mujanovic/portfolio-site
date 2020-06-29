@@ -31,9 +31,9 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio">
-      <div className="container-fluid no-padding">
+      <div className="container-fluid">
         <Title className="portfolioHeading" title="Portfolio"></Title>
-        <div className="row portfolio-items no-gutters pt-2 pt-md-5 pb-5">
+        <div className="row portfolio-items pt-1 pt-md-3 pb-3">
           {
             portfolios.map(({ node }) => {
               return (
