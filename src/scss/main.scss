@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap");
 
+::-webkit-scrollbar-thumb {
+  background: #d94c48;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #565656;
+}
+
 html,
 body {
   width: 100%;
