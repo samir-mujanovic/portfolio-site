@@ -13,13 +13,11 @@ const Contact = () => {
                         <form
                             id="contact-form"
                             name="contact"
-                            method="POST"
+                            method="post"
                             data-netlify="true"
                             data-netlify-honeypot="bot-field"
                         >
-                            <p className="hidden">
-                                <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
-                            </p>
+                            <input type="hidden" name="form-name" value="contact" />
                             <div className="input">
                                 <input
                                     className="input-field cf-validate"
