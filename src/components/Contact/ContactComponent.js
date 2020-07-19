@@ -13,11 +13,13 @@ const Contact = () => {
                         <form
                             id="contact-form"
                             name="contact"
-                            method="post"
+                            method="POST"
                             data-netlify="true"
                             data-netlify-honeypot="bot-field"
                         >
-                            <input type="hidden" name="form-name" value="contact" />
+                            <p className="hidden">
+                                <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+                            </p>
                             <div className="input">
                                 <input
                                     className="input-field cf-validate"
@@ -25,7 +27,6 @@ const Contact = () => {
                                     type="text"
                                     name="name"
                                     placeholder="Your Name"
-                                    v-model="form.name"
                                     required
                                 />
                                 <span className="color-line"></span>
@@ -37,7 +38,6 @@ const Contact = () => {
                                     type="email"
                                     name="email"
                                     placeholder="Email"
-                                    v-model="form.email"
                                     required
                                 />
                                 <span className="color-line"></span>
@@ -49,12 +49,10 @@ const Contact = () => {
                                     name="message"
                                     rows="5"
                                     placeholder="Message"
-                                    v-model="form.message"
                                     required
                                 ></textarea>
                                 <span className="color-line"></span>
                             </div>
-                            <div className="response"></div>
                             <div className="submit-button mt-2">
                                 <button type="submit" className="green-btn">Send Message</button>
                             </div>
