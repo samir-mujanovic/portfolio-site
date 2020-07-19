@@ -11,7 +11,7 @@ const about = () => {
             <SEO title="About" />
             <div className="about">
                 <div className="container">
-                    <Title className="aboutHeading" title="About" />
+                    <Title className="aboutHeading" title="About Me" />
                     <About />
                 </div>
                 <Contact />

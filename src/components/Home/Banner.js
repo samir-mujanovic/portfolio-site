@@ -1,29 +1,39 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaUser, FaClipboardList } from "react-icons/fa"
+
+import Typer from "../Typer/Typer"
 
 const Banner = () => {
   return (
     <div className="banner-text">
-      <h4>Hi There !</h4>
-      <h2>
-        <span>I'm </span> Samir Mujanovic
-      </h2>
-      <p>
-        I'm Frontend Developer & Graphics Designer focused on creating clean &
-        user‑friendly experiences...
-      </p>
+      <h1>
+        Hey there !
+        <br />
+        I'm <span>Samir Mujanovic</span>
+          <br />
+            Web Developer & Designer
+      </h1>
+      <div className="typing-txt">
+        <Typer
+          heading="I create"
+          dataText={[
+            'Web and Graphics Design.',
+            'Web Applications.',
+            'Web Pages.',
+          ]}
+        />
+      </div>
       <div className="redirect-buttons">
         <AniLink className="main-btn link mr-3" fade to="/about">
-          <span className="text">More About Me</span>
+          <span className="text">About Me</span>
           <span className="hover-icon">
-            <FaUser />
+            <span className="lnr lnr-arrow-right"></span>
           </span>
         </AniLink>
         <AniLink className="main-btn link" fade to="/portfolio">
           <span className="text">Portfolio</span>
           <span className="hover-icon">
-            <FaClipboardList />
+            <span className="lnr lnr-arrow-right"></span>
           </span>
         </AniLink>
       </div>

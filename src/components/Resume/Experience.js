@@ -7,11 +7,11 @@ const Experience = ({ exp }) => {
     return (
         <>
             <li className="event">
-                <h4>{position}</h4>
-                <h5>
+                <h5>{position}</h5>
+                <h4>
                     <span className="date">{date}</span>
                     <span className="company">{company}</span>
-                </h5>
+                </h4>
                 {documentToReactComponents(json)}
             </li>
         </>

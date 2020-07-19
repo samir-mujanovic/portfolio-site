@@ -32,7 +32,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className="container-fluid">
-        <Title className="portfolioHeading" title="Portfolio"></Title>
+        <Title className="portfolioHeading" title="Portfolio" />
         <div className="row portfolio-items pt-1 pt-md-3 pb-3">
           {
             portfolios.map(({ node }) => {

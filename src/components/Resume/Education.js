@@ -6,11 +6,11 @@ const Experience = ({ edu }) => {
     return (
         <>
             <li className="event">
-                <h4>{school}</h4>
-                <h5>
+                <h5>{school}</h5>
+                <h4>
                     <span className="date">{date}</span>
                     <span className="company">{course}</span>
-                </h5>
+                </h4>
                 <p>{description}</p>
             </li>
         </>

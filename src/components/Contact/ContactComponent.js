@@ -5,8 +5,10 @@ const Contact = () => {
     return (
         <div className="section-contact">
             <div className="container">
-                <Subtitle title="Contact Form" className="my-5" />
-                <div className="row mt-4">
+                <Subtitle title="Contact Form" className="mt-5 pb-4 white" style={{ color: "#fff" }} />
+                <p>If You have any questions feel free to contacting me at any time.</p>
+                <p>I'll try to respond as soon as a possible.</p>
+                <div className="row mt-5">
                     <div className="col-lg-12">
                         <form
                             id="contact-form"
@@ -26,6 +28,7 @@ const Contact = () => {
                                     v-model="form.name"
                                     required
                                 />
+                                <span className="color-line"></span>
                             </div>
                             <div className="input">
                                 <input
@@ -37,6 +40,7 @@ const Contact = () => {
                                     v-model="form.email"
                                     required
                                 />
+                                <span className="color-line"></span>
                             </div>
                             <div className="input">
                                 <textarea
@@ -48,6 +52,7 @@ const Contact = () => {
                                     v-model="form.message"
                                     required
                                 ></textarea>
+                                <span className="color-line"></span>
                             </div>
                             <div className="response"></div>
                             <div className="submit-button mt-2">

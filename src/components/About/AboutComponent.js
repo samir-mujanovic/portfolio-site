@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 const getAbout = graphql`
 query aboutImage {
-  aboutImage: file(relativePath: {eq: "aboutMe.jpeg"}) {
+  aboutImage: file(relativePath: {eq: "Programming-pana.png"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -19,60 +19,24 @@ const About = () => {
     return (
         <>
             <div className="row about-info">
-                <div className="col-12 col-lg-5">
+                <div className="col-12 col-lg-6">
                     <div className="about-img">
                         <Img fluid={aboutImage.childImageSharp.fluid} alt="about-me" />
                     </div>
                 </div>
-                <div className="col-12 col-lg-7">
-                    <h3>Frontend Developer & Designer</h3>
-                    <p>
-                        Hello! My name is
-                        <strong> Samir Mujanovic</strong> based in Sarajevo(Bosnia and Herzegovina).
-                        I'm a Frontend Developer with 3 years of experience. I describe myself as
-                        a developer who loves coding, open-source and web platform.
+                <div className="col-12 col-lg-6">
+                    <h5>Hello, I'm Samir Mujanovic</h5>
+                    <h1>I'm In The Web Development Industry <span>With 3+ Years</span> Of Experience.</h1>
+                    <p>Hello! My name is <b>Samir Mujanovic</b> based in Sarajevo(Bosnia and Herzegovina).
+                        I describe myself as a developer who loves coding, open-source and web platform.
                         Experienced with all stages of the development cycle for dynamic web projects.
-                        Having an in-depth knowledge including advanced
-                        <strong> HTML5, CSS3, JavaScript</strong> and working knowledge of Photoshop. Well-versed in Scrum and Agile.
+                        Having an in-depth knowledge including advanced <b>HTML5, CSS3, JavaScript</b> and working knowledge of <b>Photoshop</b>.
+                        Well-versed in <b>Scrum and Agile</b>.
                     </p>
-                    <p>
-                        In my spare time, I like to create and contribute to open-source projects. That helps me to
-                        learn a lot of new stuff, grow as a developer and support other open-source projects. I love
-                        traveling and discovering new places.
+                    <p>In my spare time, I like to create and contribute to <b>open-source</b> projects. That helps me to learn
+                        a lot of new stuff, grow as a developer and support other open-source projects.
+                        I love traveling and discovering new places.
                     </p>
-                    <div className="row">
-                        <div className="col-12 col-md-6">
-                            <ul className="about-list">
-                                <li>
-                                    <span className="title">Name:</span>
-                                    <span className="value">Samir Mujanovic</span>
-                                </li>
-                                <li>
-                                    <span className="title">Residence:</span>
-                                    <span className="value">Sarajevo, BiH</span>
-                                </li>
-                                <li>
-                                    <span className="title">Email:</span>
-                                    <span className="value">samir_mujanovic@outlook.com</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-md-6">
-                            <ul className="about-list">
-                                <li>
-                                    <span className="title">Phone:</span>
-                                    <span className="value">+38760 3359 422</span>
-                                </li>
-                                <li>
-                                    <span className="title">Address:</span>
-                                    <span className="value">
-                                        Ilidza, 71210
-                                        Sarajevo
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </>

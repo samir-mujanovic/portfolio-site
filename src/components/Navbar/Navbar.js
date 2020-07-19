@@ -1,10 +1,6 @@
 import React, { Component } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {
-  FaHome,
-  FaUser,
-  FaClipboardList,
-  FaBriefcase,
   FaLinkedinIn,
   FaSkype,
   FaGithub,
@@ -42,8 +38,7 @@ class Navbar extends Component {
         >
           <div className="navbar-logo">
             <AniLink fade to="/">
-              <h2>S.</h2>
-              <p>Frontend Developer</p>
+              <h2>SM</h2>
             </AniLink>
           </div>
           <div className="menu-holder">
@@ -55,7 +50,7 @@ class Navbar extends Component {
                   className="navbar-item"
                   activeClassName="link-active"
                 >
-                  <FaHome /> <span>Home</span>
+                  <span className="lnr lnr-home"></span> <span className="title">Home</span>
                 </AniLink>
               </li>
               <li className="nav-menu-item">
@@ -65,7 +60,7 @@ class Navbar extends Component {
                   className="navbar-item"
                   activeClassName="link-active"
                 >
-                  <FaUser /> <span>About</span>
+                  <span className="lnr lnr-user"></span> <span className="title">About</span>
                 </AniLink>
               </li>
               <li className="nav-menu-item">
@@ -75,7 +70,7 @@ class Navbar extends Component {
                   className="navbar-item"
                   activeClassName="link-active"
                 >
-                  <FaClipboardList /> <span>Resume</span>
+                  <span className="lnr lnr-book"></span> <span className="title">Resume</span>
                 </AniLink>
               </li>
               <li className="nav-menu-item">
@@ -85,58 +80,47 @@ class Navbar extends Component {
                   className="navbar-item"
                   activeClassName="link-active"
                 >
-                  <FaBriefcase /> <span>Portfolio</span>
+                  <span className="lnr lnr-briefcase"></span> <span className="title">Portfolio</span>
                 </AniLink>
               </li>
             </ul>
           </div>
 
           <div className="social-links">
-            <a
-              className="social-link"
-              href="https://www.linkedin.com/in/samir-mujanovic"
-              rel="noopener noreferrer"
-              aria-label="Linkedin"
-              target="_blank"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              className="social-link"
-              href="skype:sameer.xxxxx?userinfo"
-              aria-label="Skype"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaSkype />
-            </a>
-            <a
-              className="social-link"
-              href="https://github.com/sameerrM"
-              aria-label="Github"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaGithub />
-            </a>
+            <div className="social-title">Contact Links</div>
+            <div className="links">
+              <a
+                className="social-link"
+                href="https://www.linkedin.com/in/samir-mujanovic"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+                target="_blank"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                className="social-link"
+                href="skype:sameer.xxxxx?userinfo"
+                aria-label="Skype"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaSkype />
+              </a>
+              <a
+                className="social-link"
+                href="https://github.com/sameerrM"
+                aria-label="Github"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+            </div>
           </div>
           <div className="copy">
             <p>Copyright &copy; {new Date().getFullYear()}</p>
             <p>All rights Reserved</p>
-          </div>
-          <div className="powered">
-            Made with{" "}
-            <span role="img" aria-label="emoji">
-              ❤️
-            </span>{" "}
-            using{" "}
-            <a
-              href="https://www.gatsbyjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GatsbyJS
-            </a>
           </div>
         </div>
       </nav>
