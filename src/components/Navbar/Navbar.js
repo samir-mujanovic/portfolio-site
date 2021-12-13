@@ -35,7 +35,7 @@ class Navbar extends Component {
         >
           <div className="navbar-logo">
             <div className="image-holder">
-              <img src={Me} alt="me" />
+              <img src={Me} alt="me" className="img-fluid" />
             </div>
           </div>
           <div className="menu-holder">

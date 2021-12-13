@@ -352,7 +352,6 @@ main {
     .navbar-logo {
       width: 100%;
       text-align: center;
-      cursor: pointer;
       border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
       padding-bottom: 30px;
 
@@ -367,12 +366,11 @@ main {
       }
 
       .image-holder {
-        width: 130px;
+        width: 140px;
         display: flex;
         margin: 0 auto;
         img {
           border-radius: 50%;
-          width: 100%;
           border: 1px solid #ff4e3d !important;
         }
       }
