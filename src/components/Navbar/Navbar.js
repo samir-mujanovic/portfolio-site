@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaLinkedinIn, FaSkype, FaGithub } from "react-icons/fa"
-import Me from "../../images/me.jpg"
+import Me from "../../images/me.webp"
 
 class Navbar extends Component {
   state = {

@@ -19,7 +19,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   {
-    heroImg: file(relativePath: { eq: "bgImg2.jpeg" }) {
+    heroImg: file(relativePath: { eq: "bgImg2.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid
