@@ -29,7 +29,7 @@ const About = () => {
                     <h1>I'm In The Web Development Industry <span>With 2+ Years</span> Of Experience.</h1>
                     <p>Hello! My name is <b>Samir Mujanovic</b> based in Sarajevo(Bosnia and Herzegovina).
                         I describe myself as a developer who loves coding, open-source and web platform.
-                        Experienced with all stages of the development cycle for dynamic web projects.
+                        Experienced with all stages of the development cycle for dynamic web and mobile projects.
                         Having an in-depth knowledge including advanced <b>HTML5, CSS3, JavaScript</b> and working knowledge of <b>Photoshop</b>.
                         Well-versed in <b>Scrum and Agile</b>.
                     </p>
