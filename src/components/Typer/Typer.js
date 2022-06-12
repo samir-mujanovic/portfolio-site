@@ -22,7 +22,7 @@ class Typer extends React.Component {
       text: isDeleting
         ? fullText.substring(0, text.length - 1)
         : fullText.substring(0, text.length + 1),
-      typingSpeed: isDeleting ? 30 : 150,
+      typingSpeed: isDeleting ? 30 : 130,
     })
 
     if (!isDeleting && text === fullText) {
