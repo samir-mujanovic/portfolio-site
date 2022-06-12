@@ -26,7 +26,7 @@ const About = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                     <h5>Hello, I'm Samir Mujanovic</h5>
-                    <h1>I'm In The Web Development Industry <span>With 2+ Years</span> Of Experience.</h1>
+                    <h1>I'm In The Software Development Industry <span>With 2+ Years</span> Of Experience.</h1>
                     <p>Hello! My name is <b>Samir Mujanovic</b> based in Sarajevo(Bosnia and Herzegovina).
                         I describe myself as a developer who loves coding, open-source and web platform.
                         Experienced with all stages of the development cycle for dynamic web and mobile projects.
