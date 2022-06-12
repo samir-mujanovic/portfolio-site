@@ -17,9 +17,8 @@ const Banner = () => {
         <Typer
           heading="I create"
           dataText={[
-            'Web and Graphics Design.',
-            'Web Applications.',
-            'Web Pages.',
+            'Web and Mobile Applications.',
+            'Web and Mobile Design.'
           ]}
         />
       </div>
