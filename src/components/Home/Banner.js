@@ -11,7 +11,7 @@ const Banner = () => {
         <br />
         I'm <span>Samir Mujanovic</span>
           <br />
-            Web Developer & Designer
+            Web & Mobile Developer
       </h1>
       <div className="typing-txt">
         <Typer
